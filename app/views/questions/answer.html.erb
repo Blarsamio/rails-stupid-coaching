@@ -1,0 +1,33 @@
+
+<%# app/views/questions/answer.html.erb %>
+
+<%# This form will not be submitted via Turbo, so we don't need to disable Turbo for it. %>
+
+<div class="container">
+  <h1>Stupid Coaching!</h1>
+
+  <blockquote>
+    <p class="question">
+      <% if @question.blank? %>
+        🤐
+      <% else %>
+        <%= @question %>
+      <% end %>
+    </p>
+    <cite>You</cite>
+  </blockquote>
+
+  <blockquote class="coach">
+    <p>
+      <% if @answer.blank? %>
+        🤷
+      <% else %>
+        <%= @answer %>
+      <% end %>
+    </p>
+    <cite>Your coach</cite>
+  </blockquote>
+
+
+  <% link_to "Ask a new question", question_path %>
+</div>

@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+/* Path: app/assets/stylesheets/posts.scss */
+.post {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.coach {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.question {
+  font-style: italic;
+}
+ /* Path: app/assets/stylesheets/application.css */
